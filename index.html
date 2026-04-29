@@ -3,60 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>medisoft</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Lawrence Demaga | Software Engineer</title>
+    
+    <!-- Google Fonts: Montserrat (Headers - Pepsi-like bold, round feel) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="">LAWRENCE</a>
+    
+    <!-- Integrated Splash Screen -->
+    <div id="splash-screen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: var(--bg-color); z-index: 9999; display: flex; justify-content: center; align-items: center; flex-direction: column; transition: opacity 0.5s ease;">
+        <div class="bg-shape" style="width: 300px; height: 300px; background: rgba(0, 75, 147, 0.5); animation: pulseSplash 4s infinite alternate;"></div>
+        <div class="bg-shape" style="width: 250px; height: 250px; background: rgba(201, 0, 43, 0.4); animation: pulseSplash 4s infinite alternate; animation-delay: -2s;"></div>
+        
+        <div style="position: relative; z-index: 10; text-align: center;">
+            <div style="font-size: 6rem; color: #ffffff; letter-spacing: -3px; font-family: var(--font-heading); font-weight: 900; opacity: 0; animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;">
+                LD<span style="color: var(--secondary-color);">.</span>
             </div>
-           
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about..html">ABOUT</a></li>
-                <li><a href="service.html">SERVICES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+            <div style="width: 200px; height: 4px; background: rgba(255, 255, 255, 0.1); margin: 30px auto 0; border-radius: 10px; overflow: hidden; opacity: 0; animation: fadeIn 0.5s ease 1s forwards;">
+                <div style="height: 100%; width: 0%; background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); animation: load 2.5s ease-in-out forwards 1s;"></div>
+            </div>
+            <div style="color: rgba(255, 255, 255, 0.5); font-size: 0.8rem; margin-top: 20px; text-transform: uppercase; letter-spacing: 2px; font-family: var(--font-heading); font-weight: 700; opacity: 0; animation: fadeIn 0.5s ease 1.5s forwards;">
+                Loading Experience...
+            </div>
+        </div>
+    </div>
+    <!-- Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">LD<span>.</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about..html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html" class="btn-primary">CONTACT ME</a></li>
             </ul>
         </nav>
     </header>
-    <section id="HOME">
-        <div class="hero">
-            <div class="btn">
-                <h1 class="htn">HELLO,its me</h1>
-                <p> 
-                    DEMAGA LAWRENCE
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero">
+            <div class="hero-content">
+                <h2 class="greeting animate-on-scroll">Hello, I'm</h2>
+                <h1 class="name animate-on-scroll delay-1">Lawrence Demaga</h1>
+                <h3 class="role animate-on-scroll delay-2">
+                    <span class="text-gradient">Software Engineer</span> & Tech Innovator
+                </h3>
+                <p class="bio animate-on-scroll delay-2">
+                    I build scalable, high-performance web applications and backend systems. 
+                    Passionate about clean code, modern architecture, and delivering exceptional user experiences.
                 </p>
-               <div class="text">
-                
-               </div>
-               
-                  
-                
-                <p> i am a web designer with experience to create and design websites and also a photogragher, <br>
-                     i sell movies with electronics
-                    </p>
-                    <div class="social-links">
-                        <a href="https://www.Instagram.com">Instagram</a>  <a href="https://www.Facebook.com/Mbabaali Law">Facebook</a>  <a href="https://www.Twitter.com">Twitter</a>
+                <div class="hero-actions animate-on-scroll delay-3">
+                    <a href="contact.html" class="btn-primary">LET'S TALK</a>
+                    <a href="portfolio.html" class="btn-secondary">VIEW WORK</a>
+                </div>
+                <div class="social-links animate-on-scroll delay-4">
+                    <a href="https://github.com/Demagalawrence" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-container animate-on-scroll fade-in-right">
+                <div class="image-wrapper glass-panel">
+                    <img src="pic 1.jpg" alt="Lawrence Demaga Profile">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <h2>What I <span class="text-gradient">Do</span></h2>
+                <p>Comprehensive software engineering services tailored to your business needs.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up">
+                    <div class="icon-box">
+                        <i class="fas fa-code"></i>
                     </div>
-                   
+                    <h3>Full-Stack Development</h3>
+                    <p>Building responsive, dynamic web applications from frontend to backend using modern frameworks like React, Vue, and Node.js.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up delay-1">
+                    <div class="icon-box">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>API Design & Integration</h3>
+                    <p>Creating robust, scalable RESTful and GraphQL APIs to power your applications and connect disparate systems seamlessly.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up delay-2">
+                    <div class="icon-box">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Architecture</h3>
+                    <p>Designing efficient database schemas and optimizing queries for SQL (PostgreSQL, MySQL) and NoSQL (MongoDB) databases.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up">
+                    <div class="icon-box">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>Deploying applications to AWS/GCP, setting up CI/CD pipelines, and containerizing environments with Docker and Kubernetes.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up delay-1">
+                    <div class="icon-box">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Developing cross-platform mobile applications using React Native or Flutter for iOS and Android platforms.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up delay-2">
+                    <div class="icon-box">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Implementation</h3>
+                    <p>Translating design prototypes into pixel-perfect, accessible, and highly interactive user interfaces.</p>
+                </div>
             </div>
-            <div class="mit">
-                <img src="pic 1.jpg" alt="">
-            </div>
-           
+        </section>
 
-        </div>
-       
+    </main>
 
+    <footer>
+        <p>&copy; 2026 Lawrence Demaga. All rights reserved.</p>
+    </footer>
 
-
-
-
-
-    </section>
-    <script src="index.js"></script>
-    
+    <script src="script.js"></script>
 </body>
 </html>

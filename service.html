@@ -3,47 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>medisoft</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Services | Lawrence Demaga</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="">LAWRAH</a>
-            </div>
-           
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about..html">ABOUT</a></li>
-                <li><a href="service.html">SERVICES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+        <nav>
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">LD<span>.</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about..html">About</a></li>
+                <li><a href="service.html" class="active">Services</a></li>
+                <li><a href="contact.html" class="btn-primary">CONTACT ME</a></li>
             </ul>
         </nav>
     </header>
-    <section class="about">
-        <div class="cont">
-            <div class="tnt">
-                <img src="pic 2.jpg" alt="">
+
+    <main>
+        <section class="services-section" style="padding-top: 150px;">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <h2>My <span class="text-gradient">Services</span></h2>
+                <p>From advanced software engineering to technical computer solutions, I offer a wide range of services.</p>
             </div>
-            <div class="abt">
-                <h2 class="tns">About what i do</h2>
-            <div >
-                <p class="pt"> web development.<br>photo.<br>
-                vidoes<br> new electronics <br>. </p>
+            
+            <div class="services-grid">
                 
-                    
+                <!-- Service 1: Web Dev -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up">
+                    <div class="icon-box">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>I build responsive, high-quality websites and powerful web applications tailored to your business needs.</p>
+                </div>
+
+                <!-- Service 2: Windows Installation -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up delay-1">
+                    <div class="icon-box">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <h3>Windows Installation</h3>
+                    <p>Professional installation and configuration of Windows Operating Systems. Fast, secure, and optimized for your machine.</p>
+                </div>
+
+                <!-- Service 3: Computer Repair -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up delay-2">
+                    <div class="icon-box">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Computer Repair</h3>
+                    <p>Comprehensive hardware and software diagnostics and repair to get your electronics and computers running smoothly again.</p>
+                </div>
+
+                <!-- Service 4: Software Upgrades -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up">
+                    <div class="icon-box">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Software Upgrades</h3>
+                    <p>System updates, anti-virus installation, and legacy software upgrades to ensure your device is secure and up-to-date.</p>
+                </div>
+
+                <!-- Service 5: Photography & Video -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up delay-1">
+                    <div class="icon-box">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Photo & Video</h3>
+                    <p>Professional photography and video editing services to capture and create stunning visual content.</p>
+                </div>
+
+                <!-- Service 6: Electronics -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up delay-2">
+                    <div class="icon-box">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>New Electronics</h3>
+                    <p>Consulting and setup for new electronics and smart devices to modernize your home or workspace.</p>
+                </div>
+                
             </div>
-           
             
+            <!-- Optional feature image from old design -->
+            <div class="hero-image-container animate-on-scroll fade-in-up" style="margin-top: 60px; text-align: center;">
+                 <div class="image-wrapper glass-panel" style="margin: 0 auto; transform: none; width: 100%; max-width: 600px; height: auto;">
+                    <img src="pic 2.jpg" alt="Service Showcase" style="width: 100%; border-radius: 20px;">
+                </div>
             </div>
             
-        </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; 2026 Lawrence Demaga. All rights reserved.</p>
+    </footer>
 
-
-    </section>
-    
-    
+    <script src="script.js"></script>
 </body>
 </html>

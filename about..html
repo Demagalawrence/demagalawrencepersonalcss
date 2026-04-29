@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>medisoft</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About Me | Lawrence Demaga</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="">LAWRENCE</a>
+        <nav>
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">LD<span>.</span></a>
             </div>
-           
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about..html">ABOUT</a></li>
-                <li><a href="service.html">SERVICES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+            <ul class="nav-links">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about..html" class="active">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html" class="btn-primary">CONTACT ME</a></li>
             </ul>
         </nav>
     </header>
-    <section class="about">
-        <div class="cont">
-            <div>
-                <video src="vid.mp4" controls></video>
-            </div>
-            <div class="abt">
-                <h2 class="tns">About me</h2>
-               
-            <div >
-               
-                <p class="pt"> i am a student at bugema university.<br>
-                    i am a web developer with good experince iin creating websites and i am a blogger.<br>
-                i offer offer quanlity products</p>
-                
-                    
-            </div>
-            
-            </div>
-            
-        </div>
 
+    <main>
+        <section class="hero" style="padding-top: 150px; min-height: 80vh;">
+            <div class="hero-content">
+                <h2 class="greeting animate-on-scroll">Get to know me</h2>
+                <h1 class="name animate-on-scroll delay-1">About <span class="text-gradient">Me</span></h1>
 
+                <p class="bio animate-on-scroll delay-2" style="max-width: 600px; font-size: 1.2rem; margin-top: 20px;">
+                    I am a student at <strong>Bugema University</strong> with a profound passion for technology.
+                    As a dedicated Web Developer and Blogger, I have hands-on experience creating high-quality,
+                    scalable websites and delivering exceptional digital products.
+                </p>
+                <p class="bio animate-on-scroll delay-3" style="max-width: 600px; font-size: 1.1rem;">
+                    My mission is to offer premium software solutions and content that inspire. Whether I'm writing
+                    clean code or sharing insights on my blog, I am committed to excellence.
+                </p>
 
-    </section>
-    
-    
+                <div class="hero-actions animate-on-scroll delay-4">
+                    <a href="portfolio.html" class="btn-primary">View My Work</a>
+                </div>
+            </div>
+
+            <div class="hero-image-container animate-on-scroll fade-in-right">
+                <div class="image-wrapper glass-panel">
+                    <img src="pic 1.jpg" alt="Lawrence Demaga Profile">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lawrence Demaga. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

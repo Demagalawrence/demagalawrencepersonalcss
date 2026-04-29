@@ -3,38 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>medisoft</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact Me | Lawrence Demaga</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="">LAWRAH</a>
-            </div>
-           
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about..html">ABOUT</a></li>
-                <li><a href="service.html">SERVICES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+        <nav>
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">LD<span>.</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about..html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html" class="active btn-primary">CONTACT ME</a></li>
             </ul>
         </nav>
     </header>
-    <section class="label">
-        <form class="frm">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit" class="btn" onclick="alert('already submitted');">Send Message</button>
-        </form>
 
+    <main>
+        <section class="services-section" style="padding-top: 150px; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div class="section-header animate-on-scroll fade-in-up" style="margin-bottom: 40px;">
+                <h2 style="font-size: 4rem;">Let's <span class="text-gradient">Connect</span></h2>
+                <p style="font-size: 1.2rem;">Reach out to me directly via WhatsApp or Phone Call.</p>
+            </div>
+            
+            <div class="services-grid" style="display: flex; gap: 40px; justify-content: center; max-width: 800px; margin: 0 auto; width: 100%;">
+                
+                <!-- WhatsApp -->
+                <a href="https://wa.me/256744219162" target="_blank" style="text-decoration: none; color: inherit; flex: 1;">
+                    <div class="service-card glass-panel animate-on-scroll fade-in-up delay-1" style="text-align: center; height: 100%;">
+                        <div class="icon-box" style="margin: 0 auto 25px; background: rgba(37, 211, 102, 0.1); color: #25D366;">
+                            <i class="fab fa-whatsapp" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p style="font-size: 1.5rem; font-weight: bold; margin-top: 10px; color: var(--text-primary);">0744 219 162</p>
+                        <p style="color: var(--accent-color); margin-top: 10px; font-size: 0.9rem;">Click to chat</p>
+                    </div>
+                </a>
 
+                <!-- Phone Call -->
+                <a href="tel:0702595326" style="text-decoration: none; color: inherit; flex: 1;">
+                    <div class="service-card glass-panel animate-on-scroll fade-in-up delay-2" style="text-align: center; height: 100%;">
+                        <div class="icon-box" style="margin: 0 auto 25px;">
+                            <i class="fas fa-phone-alt" style="font-size: 2rem;"></i>
+                        </div>
+                        <h3>Phone Call</h3>
+                        <p style="font-size: 1.5rem; font-weight: bold; margin-top: 10px; color: var(--text-primary);">0702 595 326</p>
+                        <p style="color: var(--accent-color); margin-top: 10px; font-size: 0.9rem;">Click to call</p>
+                    </div>
+                </a>
+                
+            </div>
+        </section>
+    </main>
 
-    </section>
-    
+    <footer style="position: absolute; bottom: 0; width: 100%;">
+        <p>&copy; 2026 Lawrence Demaga. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

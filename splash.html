@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Lawrence Demaga</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #05050a;
+            --primary-color: #004B93;
+            --secondary-color: #C9002B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+        }
+
+        /* Animated Background Shapes */
+        .bg-shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            z-index: 1;
+            animation: pulse 4s infinite alternate;
+        }
+
+        .shape-1 {
+            width: 300px;
+            height: 300px;
+            background: rgba(0, 75, 147, 0.5);
+        }
+
+        .shape-2 {
+            width: 250px;
+            height: 250px;
+            background: rgba(201, 0, 43, 0.4);
+            animation-delay: -2s;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.8) translate(-50px, -50px); opacity: 0.5; }
+            100% { transform: scale(1.2) translate(50px, 50px); opacity: 1; }
+        }
+
+        /* Logo Animation */
+        .splash-container {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 6rem;
+            color: #ffffff;
+            letter-spacing: -3px;
+            opacity: 0;
+            transform: scale(0.5);
+            animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        @keyframes popIn {
+            0% { opacity: 0; transform: scale(0.5); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        /* Loading Bar */
+        .loader-container {
+            width: 200px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 30px auto 0;
+            border-radius: 10px;
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeIn 0.5s ease 1s forwards;
+        }
+
+        .loader-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            animation: load 2.5s ease-in-out forwards 1s;
+        }
+
+        @keyframes load {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .enter-text {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8rem;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0;
+            animation: fadeIn 0.5s ease 1.5s forwards;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <div class="splash-container">
+        <div class="logo">LD<span>.</span></div>
+        <div class="loader-container">
+            <div class="loader-bar"></div>
+        </div>
+        <div class="enter-text">Loading Experience...</div>
+    </div>
+
+    <script>
+        // Redirect to index.html after the animation completes (3.5 seconds)
+        setTimeout(() => {
+            window.location.href = 'index.html';
+        }, 3500);
+    </script>
+</body>
+</html>

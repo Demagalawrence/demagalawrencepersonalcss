@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Lawrence Demaga</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">LD<span>.</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Portfolio</a></li>
+                <li><a href="about..html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html" class="btn-primary">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-section" style="padding-top: 150px; min-height: 80vh;">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <h2>My <span class="text-gradient">Portfolio</span></h2>
+                <p>A selection of my recent web development and software engineering projects.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Project 1 -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up">
+                    <div class="icon-box">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce solution built with React and Node.js, featuring secure payments, real-time inventory, and an admin dashboard.</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up delay-1">
+                    <div class="icon-box">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>A data visualization dashboard for business intelligence using Vue.js and Python, handling large datasets with fast load times.</p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="service-card glass-panel animate-on-scroll fade-in-up delay-2">
+                    <div class="icon-box">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <h3>Fitness Tracker App</h3>
+                    <p>A cross-platform mobile app built with React Native for tracking workouts and nutrition, integrated with wearable APIs.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lawrence Demaga. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
